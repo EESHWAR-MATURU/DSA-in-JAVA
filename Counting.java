@@ -21,16 +21,6 @@ class Treenode {
         count+= Inorder(root.right);
         return count;
     }
-    void SumOfNodes(Treenode root){
-        if(root==null){
-            return;
-        }
-        int sum=0;
-        sum+=root.data;
-        sum+=SumOfNodes(root.left);
-        sum+=SumOfNodes(root.right);
-        return sum;
-    }
 }
 
 class Main1 {
